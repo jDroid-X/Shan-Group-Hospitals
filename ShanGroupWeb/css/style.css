@@ -138,14 +138,14 @@ nav ul {
 }
 
 .nav-menu li.nav-contact a {
-  background: var(--accent-color);
+  background: var(--secondary-color);
   padding: 8px 15px !important;
   border-radius: 5px;
   color: white !important;
 }
 
 .nav-menu li.nav-contact a:hover {
-  background: #c92a36;
+  background: #008a7b;
 }
 
 /* Utility Classes to eliminate inline styles */

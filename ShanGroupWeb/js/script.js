@@ -105,8 +105,7 @@ const SHARED_COMPONENTS = {
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; <span id="current-year">2026</span> Shan Group Hospitals. Demo Content for Copyright Purposes
-                Only.</p>
+            <p>&copy; <span id="current-year">2026</span> Shan Group Hospitals. This website is created solely for demonstration and educational purposes. All content, images, and brand references belong to their respective owners. No copyright infringement is intended.</p>
         </div>
     </div>
 </footer>`

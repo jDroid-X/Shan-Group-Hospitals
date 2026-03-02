@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Reports | Shan Group Hospital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header {
+            background-color: var(--primary-color);
+            position: relative;
+            padding: 60px 0;
+            color: white;
+        }
+
+        .page-header h1 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+
+        .report-portal {
+            padding: 60px 0;
+            background-color: var(--bg-color);
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-box {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        .login-box i {
+            font-size: 4rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-family: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main Navigation Header -->
+    <header>
+        <div class="main-header" style="padding: 10px 0;">
+            <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital Logo"
+                        style="height: 80px; width: auto;">
+                </a>
+
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li class="dropdown">
+                            <a href="#">Services <i class="fas fa-chevron-down" style="font-size: 0.8em"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="service-clinical.html">Clinical Care</a></li>
+                                <li><a href="service-surgical.html">Surgical Infrastructure</a></li>
+                                <li><a href="service-emergency.html">Emergency Services</a></li>
+                                <li><a href="service-diagnostic.html">Diagnostic Facilities</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="service-diagnostic.html">Diagnostics</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="book-appointment.html" class="btn btn-primary">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container" style="text-align: center;">
+            <h1>Patient Portal: View Reports</h1>
+            <p style="font-size: 1.1rem;">Securely access your lab results and diagnostic reports online.</p>
+        </div>
+    </section>
+
+    <section class="report-portal">
+        <div class="container" style="display: flex; justify-content: center;">
+            <div class="login-box">
+                <i class="fas fa-file-medical-alt"></i>
+                <h3 style="color: var(--primary-color); margin-bottom: 10px; font-size: 1.8rem;">Access Your Reports
+                </h3>
+                <p style="color: var(--text-light); margin-bottom: 25px;">Enter your Patient ID and registered mobile
+                    number to proceed.</p>
+                <form
+                    onsubmit="event.preventDefault(); alert('Demo: Online Portal Login functionality would execute here.');">
+                    <div class="form-group">
+                        <label for="pid">Patient ID</label>
+                        <input type="text" id="pid" class="form-control" placeholder="E.g. SGH-10293" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Registered Mobile</label>
+                        <input type="tel" id="mobile" class="form-control" placeholder="+91 XXXXXXXXXX" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary"
+                        style="width: 100%; font-size: 1.1rem; padding: 15px;">Login & View Reports</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #112B3C; color: var(--white); padding: 40px 0 20px; font-family: 'Roboto', sans-serif;">
+        <div class="container">
+            <div
+                style="text-align: center; color: #A0B2C0; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.1);">
+                <p>&copy; 2026 Shan Group Hospitals. Demo Content for Copyright Purposes Only.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

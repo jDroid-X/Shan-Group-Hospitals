@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Services | Shan Group Hospital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header {
+            background-image: url('assets/images/image2.jpeg');
+            position: relative;
+            padding: 100px 0;
+            color: white;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 76, 129, 0.85);
+        }
+
+        .page-header .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .page-header h1 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 3rem;
+        }
+
+        .service-details {
+            padding: 80px 0;
+        }
+
+        .service-block {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 60px;
+            align-items: flex-start;
+        }
+
+        .service-block.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .service-block img {
+            width: 50%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-text {
+            flex: 1;
+        }
+
+        .service-text h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .service-text p {
+            color: var(--text-dark);
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .service-text ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .service-text ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .service-text ul li i {
+            color: var(--secondary-color);
+        }
+
+        @media (max-width: 768px) {
+
+            .service-block,
+            .service-block.reverse {
+                flex-direction: column;
+            }
+
+            .service-block img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main Navigation Header -->
+    <header>
+        <div class="main-header">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital Logo">
+                </a>
+
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li class="dropdown">
+                            <a href="index.html#services">Services <i class="fas fa-chevron-down"
+                                    style="font-size: 0.8em"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="service-clinical.html">Clinical Care</a></li>
+                                <li><a href="service-surgical.html">Surgical Infrastructure</a></li>
+                                <li><a href="service-emergency.html">Emergency Services</a></li>
+                                <li><a href="service-diagnostic.html">Diagnostic Facilities</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="service-diagnostic.html">Diagnostics</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="book-appointment.html" class="btn btn-primary">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Emergency &amp; Transport Services</h1>
+            <p style="font-size: 1.2rem; max-width: 600px;">Provide immediate response and life-saving intervention.
+                Ensure rapid stabilization and safe transport of patients during emergencies.</p>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="service-details">
+        <div class="container">
+            <!-- 24-Hour Ambulance -->
+            <div class="service-block">
+                <div class="service-text">
+                    <h2>24-Hour Ambulance and Emergency Response Service</h2>
+                    <p>Emergency teams respond promptly to trauma, cardiac events, and urgent medical conditions.
+                        Ambulances are equipped with life-support systems and trained paramedics. Quick coordination
+                        between ambulance services and hospital emergency units minimizes critical response time.</p>
+                    <ul>
+                        <li><i class="fas fa-ambulance"></i> Rapid Emergency Response</li>
+                        <li><i class="fas fa-heartbeat"></i> Paramedic &amp; Life-Support equipped</li>
+                        <li><i class="fas fa-phone-alt"></i> Dedicated 24x7 Hotline</li>
+                    </ul>
+                </div>
+                <!-- image9 could be random or placeholder, assuming image2 was used on home for emergency, lets use image2 again -->
+                <img src="assets/images/image2.jpeg" alt="Emergency Services">
+            </div>
+        </div>
+    </section>
+
+    <!-- Action Bar -->
+    <section style="background: var(--accent-color); padding: 50px 0; text-align: center; color: white;">
+        <div class="container">
+            <h3 style="color: white; font-size: 2rem; margin-bottom: 20px;">In an Emergency? Don't wait.</h3>
+            <p style="margin-bottom: 30px; opacity: 0.9;">Our specialized trauma team is ready 24/7.</p>
+            <a href="tel:91XXXXXXXXX" class="btn btn-primary"
+                style="background: #fff; color: var(--accent-color); font-size: 1.1rem; padding: 15px 30px;"><i
+                    class="fas fa-phone-alt"></i> Call +91-XXX-XXX</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #112B3C; color: var(--white); padding: 80px 0 20px; font-family: 'Roboto', sans-serif;">
+        <div class="container">
+            <div
+                style="text-align: center; color: #A0B2C0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+                <p>&copy; 2026 Shan Group Hospitals. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

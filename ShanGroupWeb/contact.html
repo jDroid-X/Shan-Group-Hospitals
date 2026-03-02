@@ -8,151 +8,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .page-header {
-            background-image: url('assets/images/image2.jpeg');
-            position: relative;
-            padding: 100px 0;
-            color: white;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .page-header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(15, 76, 129, 0.85);
-        }
-
-        .page-header .container {
-            position: relative;
-            z-index: 2;
-        }
-
-        .page-header h1 {
-            color: white;
-            margin-bottom: 20px;
-            font-size: 3rem;
-        }
-
-        .contact-section {
-            padding: 80px 0;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-        }
-
-        .contact-info {
-            background: var(--bg-color);
-            padding: 40px;
-            border-radius: 12px;
-        }
-
-        .contact-info h3 {
-            margin-bottom: 20px;
-            color: var(--primary-color);
-            font-size: 1.8rem;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 15px;
-            margin-bottom: 25px;
-        }
-
-        .contact-item i {
-            color: var(--secondary-color);
-            font-size: 1.5rem;
-            margin-top: 5px;
-        }
-
-        .contact-form {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            font-family: inherit;
-        }
-
-        .form-control:focus {
-            outline: none;
-            border-color: var(--secondary-color);
-        }
-
-        @media (max-width: 768px) {
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+        /* All styles centralized in style.css */
     </style>
 </head>
 
 <body>
-    <!-- Main Navigation Header -->
-    <header>
-        <div class="main-header">
-            <div class="container">
-                <a href="index.html" class="logo">
-                    <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital Logo">
-                </a>
+    <div id="header-placeholder"></div>
 
-                <div class="mobile-menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-
-                <nav>
-                    <ul class="nav-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li class="dropdown">
-                            <a href="index.html#services">Services <i class="fas fa-chevron-down fs-08"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="service-clinical.html">Clinical Care</a></li>
-                                <li><a href="service-surgical.html">Surgical Infrastructure</a></li>
-                                <li><a href="service-emergency.html">Emergency Services</a></li>
-                                <li><a href="service-diagnostic.html">Diagnostic Facilities</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="service-diagnostic.html">Diagnostics</a></li>
-                        <li class="nav-contact"><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </nav>
-
-                <div class="header-actions">
-                    <a href="book-appointment.html" class="btn btn-primary">Book Appointment</a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section class="page-header">
+    <section class="page-header header-contact">
         <div class="container">
             <h1>Contact Us</h1>
-            <p class="fs-12" style="max-width:600px;">We are here to help you. Reach out to us for any emergency,
+            <p class="fs-12 mw-600">We are here to help you. Reach out to us for any emergency,
                 appointment booking, or general inquiry.</p>
         </div>
     </section>
@@ -161,7 +27,7 @@
         <div class="container contact-grid">
             <div class="contact-info">
                 <h3>Get in Touch</h3>
-                <p class="mb-30 text-light" style="line-height: 1.6;">If you have any questions
+                <p class="mb-30 text-light">If you have any questions
                     about our services or want to schedule an appointment, feel free to contact us.</p>
 
                 <div class="contact-item">
@@ -219,56 +85,7 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col footer-logo">
-                    <img src="assets/images/Shan_Logo.png" alt="Shan Group Logo" class="footer-logo-img">
-                    <p>Designed to deliver world-class medical care through a blend of modern infrastructure,
-                        cutting-edge technology, and compassionate service.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="find-doctor.html">Our Doctors</a></li>
-                        <li><a href="#">Patient Testimonials</a></li>
-                        <li><a href="#">Careers</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="service-clinical.html">Clinical Care</a></li>
-                        <li><a href="service-surgical.html">Surgical Center</a></li>
-                        <li><a href="service-emergency.html">Emergency 24x7</a></li>
-                        <li><a href="service-diagnostic.html">Diagnostics &amp; Lab</a></li>
-                        <li><a href="service-diagnostic.html">Pharmacy</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Contact Us</h4>
-                    <p><i class="fas fa-map-marker-alt text-secondary mr-10"></i> Multi-Specialty Hospital, India</p>
-                    <p><i class="fas fa-phone-alt text-secondary mr-10"></i> +91-XXX-XXX</p>
-                    <p><i class="fas fa-envelope text-secondary mr-10"></i> info@shangroup.co.in</p>
-                    <a href="contact.html" class="btn btn-primary btn-small mt-15">Contact Us</a>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 Shan Group Hospitals. Demo Content for Copyright Purposes Only.</p>
-            </div>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <script src="js/script.js"></script>
 </body>

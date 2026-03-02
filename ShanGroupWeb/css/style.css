@@ -48,7 +48,7 @@ a {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 8px;
 }
 
 /* Header */
@@ -59,6 +59,8 @@ header {
   width: 100%;
   top: 0;
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
 }
 
 .top-bar {
@@ -89,22 +91,32 @@ header {
   align-items: center;
 }
 
+/* LOGO SIZE LOCKED - DO NOT CHANGE WITHOUT USER PERMISSION */
 .logo img {
-  height: 90px;
+  height: 160px;
+  /* Desktop Size */
   width: auto;
   display: block;
-  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1)) drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+  /* Glow re-added for transparent header over dark backgrounds */
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
   transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 60px !important;
+    /* Mobile Responsive size */
+  }
 }
 
 .logo img:hover {
   transform: scale(1.05);
-  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
+  filter: drop-shadow(0 6px 12px rgba(15, 76, 129, 0.15));
 }
 
-.logo img,
+/* FOOTER LOGO SIZE LOCKED - DO NOT CHANGE WITHOUT USER PERMISSION */
 .footer-logo-img {
-  height: 60px;
+  height: 120px;
   width: auto;
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
   transition: filter 0.3s ease;
@@ -248,8 +260,18 @@ nav ul {
 }
 
 .action-card-accent {
-  border-bottom-color: var(--accent-color) !important;
+  border-bottom: 4px solid var(--accent-color) !important;
 }
+
+.mw-600 {
+  max-width: 600px !important;
+}
+
+.lh-16 {
+  line-height: 1.6 !important;
+}
+
+/* Hero Images handled via consolidated backgrounds */
 
 .mb-25 {
   margin-bottom: 25px;
@@ -355,6 +377,78 @@ nav ul {
   color: #A0B2C0;
 }
 
+/* Global Page Header (Enterprise Structure) */
+.page-header {
+  position: relative;
+  padding: 180px 0 60px;
+  /* Desktop Space for the 160px logo */
+  color: var(--white);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: 100px 0 40px;
+    /* Mobile Space for the scaled 60px logo */
+  }
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 76, 129, 0.85);
+  /* Standard dark overlay */
+}
+
+.page-header .container {
+  position: relative;
+  z-index: 2;
+}
+
+.page-header h1 {
+  color: var(--white);
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+/* Page-Specific Header Backgrounds */
+.header-about {
+  background-image: url('../assets/images/image7.png');
+}
+
+.header-contact {
+  background-image: url('../assets/images/image2.jpeg');
+}
+
+.header-clinical {
+  background-image: url('../assets/images/image1.jpeg');
+}
+
+.header-surgical {
+  background-image: url('../assets/images/image6.jpeg');
+}
+
+.header-emergency {
+  background-image: url('../assets/images/image2.jpeg');
+}
+
+.header-diagnostic {
+  background-image: url('../assets/images/image5.jpeg');
+}
+
+.header-portal {
+  background-color: var(--primary-color);
+}
+
+.hero-main {
+  background-image: url('../assets/images/image7.png');
+}
+
 /* Header Tweaks */
 .nav-menu .dropdown i {
   font-size: 0.8em;
@@ -383,11 +477,23 @@ nav a:hover {
 }
 
 .btn-primary {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: var(--white);
 }
 
 .btn-primary:hover {
+  background-color: #0c3d67;
+  /* Darker blue */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(15, 76, 129, 0.3);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+.btn-secondary:hover {
   background-color: #008a7b;
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 168, 150, 0.3);
@@ -416,13 +522,22 @@ nav a:hover {
 /* Hero Section */
 .hero {
   position: relative;
-  height: 65vh;
-  min-height: 480px;
+  min-height: 600px;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   color: var(--white);
+  padding-top: 200px;
+  /* Desktop Space for the 160px logo */
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 480px;
+    padding-top: 100px;
+    /* Mobile Space for the scaled 60px logo */
+  }
 }
 
 .hero::before {
@@ -780,9 +895,7 @@ body {
     padding: 10px 0;
   }
 
-  .logo img {
-    height: 70px;
-  }
+  /* Logo height override removed to maintain locked size */
 
   .quick-actions .container {
     grid-template-columns: repeat(2, 1fr);
@@ -957,7 +1070,159 @@ body {
   color: var(--primary-color);
 }
 
-.doc-feature i {
+.doc_feature i {
   color: var(--secondary-color);
   font-size: 1.2rem;
+}
+
+/* --- Contact & Booking Sections (Centralized) --- */
+.contact-section,
+.booking-section {
+  padding: 80px 0;
+  background-color: var(--bg-color);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-info {
+  background: var(--white);
+  padding: 40px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.contact-info h3 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.contact-item i {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+.contact-form,
+.booking-form {
+  background: var(--white);
+  padding: 40px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: inherit;
+  transition: var(--transition);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(15, 76, 129, 0.1);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+
+  .contact-grid,
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Service Details Styles (Centralized) --- */
+.service-details {
+  padding: 80px 0;
+}
+
+.service-block {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+.service-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-block img {
+  width: 50%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.service-text {
+  flex: 1;
+}
+
+.service-text h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.service-text p {
+  color: var(--text-dark);
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.service-text ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.service-text ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.service-text ul li i {
+  color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+
+  .service-block,
+  .service-block.reverse {
+    flex-direction: column;
+  }
+
+  .service-block img {
+    width: 100%;
+  }
 }

@@ -10,32 +10,6 @@
     <style>
         .page-header {
             background-image: url('assets/images/image5.jpeg');
-            position: relative;
-            padding: 100px 0;
-            color: white;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .page-header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(15, 76, 129, 0.85);
-        }
-
-        .page-header .container {
-            position: relative;
-            z-index: 2;
-        }
-
-        .page-header h1 {
-            color: white;
-            margin-bottom: 20px;
-            font-size: 3rem;
         }
 
         .service-details {
@@ -108,47 +82,13 @@
 <body>
 
     <!-- Main Navigation Header -->
-    <header>
-        <div class="main-header">
-            <div class="container">
-                <a href="index.html" class="logo">
-                    <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital Logo">
-                </a>
-
-                <div class="mobile-menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-
-                <nav>
-                    <ul class="nav-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li class="dropdown">
-                            <a href="index.html#services">Services <i class="fas fa-chevron-down fs-08"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="service-clinical.html">Clinical Care</a></li>
-                                <li><a href="service-surgical.html">Surgical Infrastructure</a></li>
-                                <li><a href="service-emergency.html">Emergency Services</a></li>
-                                <li><a href="service-diagnostic.html">Diagnostic Facilities</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="service-diagnostic.html">Diagnostics</a></li>
-                        <li class="nav-contact"><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </nav>
-
-                <div class="header-actions">
-                    <a href="book-appointment.html" class="btn btn-primary">Book Appointment</a>
-                </div>
-            </div>
-        </div>
-    </header>
+    <div id="header-placeholder"></div>
 
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
             <h1>Diagnostic Facilities</h1>
-            <p class="fs-12" style="max-width: 600px;">Precise diagnosis is the foundation of effective treatment.
+            <p class="fs-12 mw-600">Precise diagnosis is the foundation of effective treatment.
                 Our center is equipped with modern pathology, radiology, and cardiology evaluation units.</p>
         </div>
     </section>
@@ -211,60 +151,12 @@
             <h3 class="action-bar-title">Book a Diagnostic Test</h3>
             <p class="mb-30 opacity-09">Get accurate results from our certified laboratory. Home collection available.
             </p>
-            <a href="book-appointment.html" class="btn btn-primary bg-secondary p-15-30 fs-11">Schedule a Test Now</a>
+            <a href="book-appointment.html" class="btn btn-primary bg-secondary p-15-30 fs-11"><i
+                    class="fas fa-vial mr-5"></i> Schedule a Test Now</a>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col footer-logo">
-                    <img src="assets/images/Shan_Logo.png" alt="Shan Group Logo" class="footer-logo-img">
-                    <p>Designed to deliver world-class medical care through a blend of modern infrastructure,
-                        cutting-edge technology, and compassionate service.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="find-doctor.html">Our Doctors</a></li>
-                        <li><a href="#">Patient Testimonials</a></li>
-                        <li><a href="#">Careers</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="service-clinical.html">Clinical Care</a></li>
-                        <li><a href="service-surgical.html">Surgical Center</a></li>
-                        <li><a href="service-emergency.html">Emergency 24x7</a></li>
-                        <li><a href="service-diagnostic.html">Diagnostics &amp; Lab</a></li>
-                        <li><a href="service-diagnostic.html">Pharmacy</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Contact Us</h4>
-                    <p><i class="fas fa-map-marker-alt text-secondary mr-10"></i> Multi-Specialty Hospital, India</p>
-                    <p><i class="fas fa-phone-alt text-secondary mr-10"></i> +91-XXX-XXX</p>
-                    <p><i class="fas fa-envelope text-secondary mr-10"></i> info@shangroup.co.in</p>
-                    <a href="contact.html" class="btn btn-primary btn-small mt-15">Contact Us</a>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 Shan Group Hospitals. Demo Content for Copyright Purposes Only.</p>
-            </div>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <script src="js/script.js"></script>
 </body>

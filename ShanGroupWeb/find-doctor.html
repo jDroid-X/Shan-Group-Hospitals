@@ -77,8 +77,8 @@
 <body>
     <!-- Main Navigation Header -->
     <header>
-        <div class="main-header" style="padding: 10px 0;">
-            <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+        <div class="main-header">
+            <div class="container df-jb-ac">
                 <a href="index.html" class="logo">
                     <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital Logo">
                 </a>
@@ -92,7 +92,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li class="dropdown">
-                            <a href="#">Services <i class="fas fa-chevron-down" style="font-size: 0.8em"></i></a>
+                            <a href="#">Services <i class="fas fa-chevron-down fs-08"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="service-clinical.html">Clinical Care</a></li>
                                 <li><a href="service-surgical.html">Surgical Infrastructure</a></li>
@@ -113,17 +113,17 @@
     </header>
 
     <section class="page-header">
-        <div class="container" style="text-align: center;">
+        <div class="container text-center">
             <h1>Find a Doctor</h1>
-            <p style="font-size: 1.1rem;">Search leading specialists to find the right care for you.</p>
+            <p class="fs-11">Search leading specialists to find the right care for you.</p>
         </div>
     </section>
 
     <section class="doctor-search">
         <div class="container">
             <div class="search-bar">
-                <input type="text" placeholder="Search by doctor name...">
-                <select>
+                <input type="text" placeholder="Search by doctor name..." aria-label="Search Doctor">
+                <select title="Select Specialty">
                     <option value="">All Specialties</option>
                     <option value="cardiology">Cardiology</option>
                     <option value="orthopedics">Orthopedics</option>
@@ -140,27 +140,26 @@
             <i class="fas fa-user-md"></i>
             <h3>Dr. Amit Sharma</h3>
             <p>Senior Cardiologist<br>15+ Years Experience</p>
-            <a href="book-appointment.html" class="btn btn-outline" style="width: 100%;">Book Consultation</a>
+            <a href="book-appointment.html" class="btn btn-outline w-100">Book Consultation</a>
         </div>
         <div class="doc-card">
             <i class="fas fa-user-md"></i>
             <h3>Dr. Priya Verma</h3>
             <p>Gynecologist & Obstetrician<br>10+ Years Experience</p>
-            <a href="book-appointment.html" class="btn btn-outline" style="width: 100%;">Book Consultation</a>
+            <a href="book-appointment.html" class="btn btn-outline w-100">Book Consultation</a>
         </div>
         <div class="doc-card">
             <i class="fas fa-user-md"></i>
             <h3>Dr. Rajeev Singh</h3>
             <p>Orthopedic Surgeon<br>12+ Years Experience</p>
-            <a href="book-appointment.html" class="btn btn-outline" style="width: 100%;">Book Consultation</a>
+            <a href="book-appointment.html" class="btn btn-outline w-100">Book Consultation</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer style="background: #112B3C; color: var(--white); padding: 40px 0 20px; font-family: 'Roboto', sans-serif;">
+    <footer class="footer-styled">
         <div class="container">
-            <div
-                style="text-align: center; color: #A0B2C0; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.1);">
+            <div class="footer-bottom-inc pt-10 border-top-light">
                 <p>&copy; 2026 Shan Group Hospitals. Demo Content for Copyright Purposes Only.</p>
             </div>
         </div>

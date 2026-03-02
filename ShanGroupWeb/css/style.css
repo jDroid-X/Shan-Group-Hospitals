@@ -917,8 +917,8 @@ body {
 
   .mobile-menu-toggle {
     display: flex !important;
-    color: var(--primary-color) !important;
-    background: var(--white) !important;
+    color: orange !important;
+    background: transparent !important;
   }
 
   .nav-menu {

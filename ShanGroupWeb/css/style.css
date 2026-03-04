@@ -278,7 +278,7 @@ nav ul {
 }
 
 .mb-30 {
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
 }
 
 .mt-5 {
@@ -383,7 +383,29 @@ nav ul {
 }
 
 .grid-3 {
-  grid-template-columns: repeat(3, 1fr) !important;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.section-overlap {
+  margin-top: -80px;
+  position: relative;
+  z-index: 25;
+}
+
+@media (max-width: 992px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .section-overlap {
+    margin-top: 40px;
+  }
 }
 
 .entity-card {

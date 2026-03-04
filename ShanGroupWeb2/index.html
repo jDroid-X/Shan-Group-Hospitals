@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shan Group Hospital | The Awakening</title>
+    <!-- Google Fonts for that epic RPG feel -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Magical Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital"
+                    onerror="this.src=''; this.alt='SHAN HOSPITAL'; this.className='text-logo'">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#diagnostics">Diagnostics</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-action">
+                <a href="book-appointment.html" class="btn-gold-outline"><i class="fas fa-calendar-check"></i> Book
+                    Now</a>
+            </div>
+            <div class="mobile-menu-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#diagnostics">Diagnostics</a>
+            <a href="contact.html">Contact</a>
+            <a href="book-appointment.html" class="btn-gold-solid">Book Appointment</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <img src="assets/images/image7.png" alt="Hospital World" class="bg-img"
+                onerror="this.src='assets/images/image1.jpeg'">
+            <div class="vignette"></div>
+        </div>
+        <div class="hero-content fade-in-up">
+            <div class="badge">A New Era of Healing</div>
+            <h1 class="title">World-Class Medical Care, <br> <span class="text-gold">Rooted in Compassion.</span></h1>
+            <p class="subtitle">Equipped with advanced diagnostic laboratories, modern operation theatres, and 24x7
+                emergency response to serve you better.</p>
+            <div class="hero-actions">
+                <a href="index.html#services" class="btn-gold-solid">Explore Realm <i
+                        class="fas fa-chevron-right"></i></a>
+                <a href="service-emergency.html" class="btn-glass"><i class="fas fa-ambulance"></i> Emergency 24x7</a>
+            </div>
+        </div>
+
+        <div class="quick-stats fade-in-up delay-1">
+            <a href="find-doctor.html" class="stat-card">
+                <i class="fas fa-user-md stat-icon"></i>
+                <div class="stat-info">
+                    <h3>Find a Doctor</h3>
+                    <p>Search leading specialists</p>
+                </div>
+            </a>
+            <a href="view-reports.html" class="stat-card">
+                <i class="fas fa-vials stat-icon"></i>
+                <div class="stat-info">
+                    <h3>View Reports</h3>
+                    <p>Access lab results online</p>
+                </div>
+            </a>
+            <a href="service-emergency.html" class="stat-card">
+                <i class="fas fa-heartbeat stat-icon"></i>
+                <div class="stat-info">
+                    <h3>Emergency Care</h3>
+                    <p>24/7 Trauma & Ambulance</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section mt-mobile">
+        <div class="container">
+            <div class="section-title-wrapper fade-in-up">
+                <div class="gold-line"></div>
+                <h2>Comprehensive Healthcare</h2>
+                <p>Delivering safe, modern, and advanced medical care structured around patient comfort and safety.</p>
+                <div class="gold-line reverse"></div>
+            </div>
+
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="rpg-card fade-in-up">
+                    <div class="card-img-wrapper">
+                        <img src="assets/images/image1.jpeg" alt="Clinical Care"
+                            onerror="this.src='../ShanGroupWeb/assets/images/image1.jpeg'">
+                        <div class="card-element-icon"><i class="fas fa-stethoscope"></i></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Core Clinical Care</h3>
+                        <p>24-hour patient admission, daily doctor consultations, and specialized cardiology treatments.
+                        </p>
+                        <a href="service-clinical.html" class="btn-link">View Details</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="rpg-card fade-in-up delay-1">
+                    <div class="card-img-wrapper">
+                        <img src="assets/images/image6.jpeg" alt="Surgical"
+                            onerror="this.src='../ShanGroupWeb/assets/images/image6.jpeg'">
+                        <div class="card-element-icon"><i class="fas fa-scalpel"></i></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Surgical Infrastructure</h3>
+                        <p>Comprehensive operation theatres for minimally invasive and open surgical procedures.</p>
+                        <a href="service-surgical.html" class="btn-link">View Details</a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="rpg-card fade-in-up delay-2">
+                    <div class="card-img-wrapper">
+                        <img src="assets/images/image2.jpeg" alt="Emergency"
+                            onerror="this.src='../ShanGroupWeb/assets/images/image2.jpeg'">
+                        <div class="card-element-icon"><i class="fas fa-ambulance"></i></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Emergency Services</h3>
+                        <p>Immediate response and life-saving intervention with 24-hour advanced ambulances.</p>
+                        <a href="service-emergency.html" class="btn-link">View Details</a>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="rpg-card fade-in-up delay-3">
+                    <div class="card-img-wrapper">
+                        <img src="assets/images/image3.jpeg" alt="Womens Health"
+                            onerror="this.src='../ShanGroupWeb/assets/images/image3.jpeg'">
+                        <div class="card-element-icon"><i class="fas fa-baby"></i></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Women's Healthcare</h3>
+                        <p>24-hour normal & C-section delivery facilities with specialized obstetric patient care.</p>
+                        <a href="service-clinical.html" class="btn-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diagnostics / Split Section -->
+    <section id="diagnostics" class="section dark-realm">
+        <div class="container split-layout">
+            <div class="split-image fade-in-up">
+                <div class="image-frame">
+                    <img src="assets/images/image5.jpeg" alt="Diagnostics"
+                        onerror="this.src='../ShanGroupWeb/assets/images/image5.jpeg'">
+                    <div class="frame-corner top-left"></div>
+                    <div class="frame-corner top-right"></div>
+                    <div class="frame-corner bottom-left"></div>
+                    <div class="frame-corner bottom-right"></div>
+                </div>
+            </div>
+            <div class="split-content fade-in-up delay-1">
+                <div class="badge gold">Advanced Technology</div>
+                <h2 class="title text-light">Diagnostic & Lab Services</h2>
+                <p class="subtitle text-light-muted">Supporting precise clinical decisions through modern imagining and
+                    automated laboratory evaluation.</p>
+
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-x-ray"></i></div>
+                        <div class="feature-text">
+                            <h4>MRI & CT Scan</h4>
+                            <p>High-resolution imaging for neurological, cardiac, and structural diagnostics.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-microscope"></i></div>
+                        <div class="feature-text">
+                            <h4>Pathology Lab</h4>
+                            <p>Automated analyzers for blood tests, biochemistry, and microbiology.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-desktop"></i></div>
+                        <div class="feature-text">
+                            <h4>Digital Ultrasound & X-ray</h4>
+                            <p>Fast, non-invasive imaging ensuring precise and early detection.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-30">
+                    <a href="service-diagnostic.html" class="btn-gold-outline"><i class="fas fa-flask"></i> View
+                        Packages</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="section vision-bg">
+        <div class="vision-overlay"></div>
+        <div class="container relative">
+            <div class="vision-content fade-in-up">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <h2>A Vision for a Healthier Future</h2>
+                <p>"The Shan Group Hospital stands as a symbol of hope, innovation, and social responsibility. As we
+                    expand our healthcare footprint, we remain steadfast in our mission to build healthier communities
+                    and a stronger, more equitable India."</p>
+                <div class="author-signature">Dr. Shan Chaudhary</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital" class="footer-logo"
+                onerror="this.src=''; this.alt='SHAN HOSPITAL'">
+            <p>&copy; 2024 Shan Group Hospitals. Constructed by Antigravity in the Genesis Engine.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

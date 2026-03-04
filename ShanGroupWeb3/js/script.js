@@ -8,51 +8,38 @@
 const SHARED_COMPONENTS = {
     header: `
 <!-- Main Navigation Header -->
-<header>
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="top-left">
-                <span><i class="fas fa-envelope"></i> info@shangroup.co.in</span>
-                <span class="ml-20"><i class="fas fa-clock"></i> 24x7 Emergency &amp; OPD</span>
-            </div>
-            <div class="top-right emergency-text">
-                <i class="fas fa-phone-alt"></i> Emergency: +91-123-456-7890
-            </div>
+<header id="main-nav">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a href="index.html" class="logo">
+            <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital Logo">
+        </a>
+
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
         </div>
-    </div>
 
-    <div class="main-header">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital Logo">
-            </a>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="index.html#services">Services <i class="fas fa-chevron-down fs-08"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="service-clinical.html">Clinical Care</a></li>
+                        <li><a href="service-surgical.html">Surgical</a></li>
+                        <li><a href="service-emergency.html">Emergency</a></li>
+                        <li><a href="service-diagnostic.html">Diagnostic</a></li>
+                    </ul>
+                </li>
+                <li><a href="find-doctor.html">Showcase</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-            <div class="mobile-menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li class="dropdown">
-                        <a href="index.html#services">Services <i class="fas fa-chevron-down fs-08"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="service-clinical.html">Clinical Care</a></li>
-                            <li><a href="service-surgical.html">Surgical Infrastructure</a></li>
-                            <li><a href="service-emergency.html">Emergency Services</a></li>
-                            <li><a href="service-diagnostic.html">Diagnostic Facilities</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="service-diagnostic.html">Diagnostics</a></li>
-                    <li class="nav-contact"><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-actions">
-                <a href="book-appointment.html" class="btn btn-primary"><i class="fas fa-calendar-check mr-5"></i> Book Appointment</a>
-            </div>
+        <div class="header-actions">
+            <a href="book-appointment.html" class="btn btn-primary">Book Appointment</a>
+            <div class="search-icon"><i class="fas fa-search"></i></div>
         </div>
     </div>
 </header>`,
@@ -63,23 +50,23 @@ const SHARED_COMPONENTS = {
         <div class="footer-grid">
             <div class="footer-col footer-logo">
                 <img src="assets/images/Shan_Logo.png" alt="Shan Group Logo" class="footer-logo-img">
-                <p>Designed to deliver world-class medical care through a blend of modern infrastructure, cutting-edge
-                    technology, and compassionate service.</p>
+                <p>Delivering world-class healthcare through innovation, compassion, and state-of-the-art medical technology.</p>
                 <div class="social-links">
-                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
 
             <div class="footer-col">
-                <h4>Quick Links</h4>
+                <h4>Explore</h4>
                 <ul class="footer-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="find-doctor.html">Our Doctors</a></li>
-                    <li><a href="about.html#testimonials">Patient Testimonials</a></li>
-                    <li><a href="contact.html#careers">Careers</a></li>
+                    <li><a href="find-doctor.html">Doctors</a></li>
+                    <li><a href="find-doctor.html">Showcase</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
                 </ul>
             </div>
 
@@ -89,23 +76,21 @@ const SHARED_COMPONENTS = {
                     <li><a href="service-clinical.html">Clinical Care</a></li>
                     <li><a href="service-surgical.html">Surgical Center</a></li>
                     <li><a href="service-emergency.html">Emergency 24x7</a></li>
-                    <li><a href="service-diagnostic.html">Diagnostics &amp; Lab</a></li>
-                    <li><a href="service-diagnostic.html">Pharmacy</a></li>
+                    <li><a href="service-diagnostic.html">Diagnostics</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
-                <h4>Contact Us</h4>
-                <p><i class="fas fa-map-marker-alt text-secondary mr-10"></i> Multi-Specialty Hospital, India</p>
-                <p><i class="fas fa-phone-alt text-secondary mr-10"></i> +91-123-456-7890</p>
-                <p><i class="fas fa-envelope text-secondary mr-10"></i> info@shangroup.co.in</p>
-                <a href="contact.html" class="btn btn-secondary btn-small mt-15"><i class="fas fa-envelope mr-5"></i>
-                    Contact Us</a>
+                <h4>Get in Touch</h4>
+                <p><i class="fas fa-map-marker-alt mr-10"></i> Multi-Specialty Hospital, India</p>
+                <p><i class="fas fa-phone-alt mr-10"></i> +91-XXX-XXX</p>
+                <p><i class="fas fa-envelope mr-10"></i> info@shangroup.co.in</p>
+                <a href="contact.html" class="btn btn-secondary btn-small mt-15">Contact Us</a>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; <span id="current-year">2026</span> Shan Group Hospitals. This website is created solely for demonstration and educational purposes. All content, images, and brand references belong to their respective owners. No copyright infringement is intended.</p>
+            <p>&copy; <span id="current-year">2026</span> Shan Group Hospitals. Premium Healthcare Experience.</p>
         </div>
     </div>
 </footer>`
@@ -127,7 +112,44 @@ document.addEventListener('DOMContentLoaded', () => {
     const yearSpan = document.getElementById('current-year');
     if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
-    console.log("Shan Group Hospital Website Initialized (Local File Support Active).");
+    // 4. Header Scroll & Back to Top Logic
+    const header = document.getElementById('main-nav');
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+        if (header) {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        }
+
+        if (backToTop) {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        }
+    });
+
+    if (backToTop) {
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
+    // 5. Hero Slider Navigation (Simplistic simulation)
+    const sliderItems = document.querySelectorAll('.hero-slider-nav .nav-item');
+    sliderItems.forEach(item => {
+        item.addEventListener('click', () => {
+            sliderItems.forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+        });
+    });
+
+    console.log("Shan Group Hospital Website Initialized (Premium Design V2).");
 });
 
 function initializeAppInteractivity() {

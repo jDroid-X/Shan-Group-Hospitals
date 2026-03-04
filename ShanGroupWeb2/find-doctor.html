@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Doctor | Shan Group Hospital</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="particleCanvas"></canvas>
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital"
+                    onerror="this.src=''; this.alt='SHAN HOSPITAL'; this.className='text-logo'">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#diagnostics">Diagnostics</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-action">
+                <a href="book-appointment.html" class="btn-gold-outline"><i class="fas fa-calendar-check"></i> Book
+                    Now</a>
+            </div>
+            <div class="mobile-menu-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#diagnostics">Diagnostics</a>
+            <a href="contact.html">Contact</a>
+            <a href="book-appointment.html" class="btn-gold-solid">Book Appointment</a>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container fade-in-up visible">
+            <div class="section-title-wrapper">
+                <div class="gold-line"></div>
+                <h2>Search Leading Specialists</h2>
+                <p>The healers of the realm await your request.</p>
+                <div class="gold-line reverse"></div>
+            </div>
+
+            <div class="services-grid">
+                <div class="rpg-card">
+                    <div class="card-img-wrapper">
+                        <img src="assets/images/image4.jpeg" alt="Doctor 1" class="rpg-card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Dr. Shan Chaudhary</h3>
+                        <p class="text-gold">Chief Medical Officer</p>
+                        <p>Specialist in Internal Medicine & Community Health.</p>
+                        <a href="book-appointment.html" class="btn-gold-solid mt-20">Book Session</a>
+                    </div>
+                </div>
+                <!-- Mock Doctors -->
+                <div class="rpg-card">
+                    <div class="card-img-wrapper">
+                        <img src="assets/images/image8.jpeg" alt="Doctor 2" class="rpg-card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Dr. Aria Valez</h3>
+                        <p class="text-gold">Cardiology Expert</p>
+                        <p>Expert in minimally invasive heart procedures.</p>
+                        <a href="book-appointment.html" class="btn-gold-solid mt-20">Book Session</a>
+                    </div>
+                </div>
+                <div class="rpg-card">
+                    <div class="card-img-wrapper">
+                        <img src="assets/images/image9.jpeg" alt="Doctor 3" class="rpg-card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Dr. Julian Thorne</h3>
+                        <p class="text-gold">Orthopedic Specialist</p>
+                        <p>Specialist in joint restoration and sports trauma.</p>
+                        <a href="book-appointment.html" class="btn-gold-solid mt-20">Book Session</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital" class="footer-logo"
+                onerror="this.src=''; this.alt='SHAN HOSPITAL'">
+            <p>&copy; 2024 Shan Group Hospitals. Constructed by Antigravity in the Genesis Engine.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

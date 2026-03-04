@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | Shan Group Hospital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* All styles moved to style.css for professional enterprise structure */
+    </style>
+</head>
+
+<body>
+    <!-- Main Navigation Header -->
+    <div id="header-placeholder"></div>
+
+    <section class="page-header">
+        <div class="container text-center">
+            <span class="hero-subtitle text-secondary">Schedule Now</span>
+            <h1 class="text-white">Book an Appointment</h1>
+        </div>
+    </section>
+
+    <section class="section bg-soft">
+        <div class="container">
+            <div class="booking-form max-width-800 mx-auto">
+                <div class="form-title">
+                    <h2 class="text-primary">Patient Information</h2>
+                    <p class="text-medium">Consult with our expert doctors today.</p>
+                </div>
+                <form
+                    onsubmit="event.preventDefault(); alert('Demo: Appointment request submitted. We will contact you shortly.');">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname" class="font-bold">First Name</label>
+                            <input type="text" id="fname" class="form-control" required placeholder="Enter first name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lname" class="font-bold">Last Name</label>
+                            <input type="text" id="lname" class="form-control" required placeholder="Enter last name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone" class="font-bold">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" required placeholder="Enter phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="font-bold">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter email (optional)">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="department" class="font-bold">Select Speciality</label>
+                        <select id="department" class="form-control" required title="Specialty Selection">
+                            <option value="">-- Choose Speciality --</option>
+                            <option value="Cardiology">Cardiology</option>
+                            <option value="Orthopedics">Orthopedics</option>
+                            <option value="Gynecology">Gynecology & Obstetrics</option>
+                            <option value="General">General OPD</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date" class="font-bold">Preferred Date</label>
+                        <input type="date" id="date" class="form-control" required title="Appointment Date">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 py-20 mt-20">Confirm Appointment Booking</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

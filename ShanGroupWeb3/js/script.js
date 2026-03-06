@@ -8,45 +8,76 @@
 const SHARED_COMPONENTS = {
     header: `
 <header id="main-nav">
-    <div class="container">
-        <a href="index.html" class="logo">
-            <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital Logo">
-        </a>
+    <!-- Branding Row -->
+    <div class="header-branding">
+        <div class="container">
+            <div class="branding-flex">
+                <a href="index.html" class="hospital-logo">
+                    <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital">
+                    <div class="logo-text">
+                        <span class="main-name">Shan Group Hospital</span>
+                        <span class="tagline">Premium Healthcare Experience</span>
+                    </div>
+                </a>
 
-        <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-            <i class="fas fa-bars"></i>
-        </button>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
 
-        <nav id="main-nav-menu">
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="about.html">About <i class="fas fa-chevron-down fs-08"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="../ShanGroupWeb/index.html" target="_blank">ShanGroupWeb</a></li>
-                        <li><a href="../ShanGroupWeb2/index.html" target="_blank">ShanGroupWeb2</a></li>
-                        <li><a href="index.html">ShanGroupWeb3</a></li>
+                <div class="header-contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@shangroup.co.in</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>24x7 Emergency & OPD</span>
+                    </div>
+                    <div class="contact-item emergency-hotline">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Emergency: +91-123-456-7890</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Row -->
+    <div class="header-nav-row">
+        <div class="container">
+            <div class="nav-flex">
+                <nav id="main-nav-menu">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="about.html">About <i class="fas fa-chevron-down fs-08"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="../ShanGroupWeb/index.html" target="_blank">ShanGroupWeb</a></li>
+                                <li><a href="../ShanGroupWeb2/index.html" target="_blank">ShanGroupWeb2</a></li>
+                                <li><a href="index.html">ShanGroupWeb3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="index.html#services">Services <i class="fas fa-chevron-down fs-08"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="service-clinical.html">Clinical Care</a></li>
+                                <li><a href="service-surgical.html">Surgical</a></li>
+                                <li><a href="service-emergency.html">Emergency</a></li>
+                                <li><a href="service-diagnostic.html">Diagnostic</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="find-doctor.html">Doctors</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="index.html#services">Services <i class="fas fa-chevron-down fs-08"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="service-clinical.html">Clinical Care</a></li>
-                        <li><a href="service-surgical.html">Surgical</a></li>
-                        <li><a href="service-emergency.html">Emergency</a></li>
-                        <li><a href="service-diagnostic.html">Diagnostic</a></li>
-                    </ul>
-                </li>
-                <li><a href="find-doctor.html">Doctors</a></li>
-                <li><a href="index.html#blog">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+                </nav>
 
-        <div class="header-actions">
-            <a href="book-appointment.html" class="btn-cta-header">Book Appointment</a>
-            <div class="search-icon"><i class="fas fa-search"></i></div>
+                <div class="header-actions">
+                    <a href="book-appointment.html" class="btn-cta-header">Book Appointment</a>
+                    <div class="search-icon"><i class="fas fa-search"></i></div>
+                </div>
+            </div>
         </div>
     </div>
 </header>`,

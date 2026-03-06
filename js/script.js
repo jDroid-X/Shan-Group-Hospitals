@@ -8,54 +8,73 @@
 const SHARED_COMPONENTS = {
     header: `
 <!-- Main Navigation Header -->
-<header>
-    <!-- Top Bar -->
-    <div class="top-bar">
+<header id="main-header-root">
+    <!-- Branding Row -->
+    <div class="branding-row">
         <div class="container">
-            <div class="top-left">
-                <span><i class="fas fa-envelope"></i> info@shangroup.co.in</span>
-                <span class="ml-20"><i class="fas fa-clock"></i> 24x7 Emergency &amp; OPD</span>
-            </div>
-            <div class="top-right emergency-text">
-                <i class="fas fa-phone-alt"></i> Emergency: +91-123-456-7890
+            <div class="branding-flex-v1">
+                <a href="index.html" class="branding-logo">
+                    <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital Logo">
+                    <div class="hospital-branding-text">
+                        <span class="hospital-name-main">Shan Group Hospital</span>
+                        <span class="hospital-tagline">Multi Speciality Hospital & Research Centre</span>
+                    </div>
+                </a>
+
+                <!-- Mobile Menu Button - Top Right -->
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <div class="header-contact-v1">
+                    <div class="info-item"><i class="fas fa-envelope"></i> info@shangroup.co.in</div>
+                    <div class="info-item"><i class="fas fa-clock"></i> 24x7 Emergency & OPD</div>
+                    <div class="info-item emergency-text"><i class="fas fa-phone-alt"></i> Emergency: +91-123-456-7890</div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="main-header">
+    <!-- Navigation Row -->
+    <div class="nav-main-row">
         <div class="container">
-            <a href="index.html" class="logo">
-                <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital Logo">
-                <div class="hospital-name">
-                    <span class="sub-name">Multi Speciality Hospital & Research Centre</span>
+            <div class="nav-wrapper">
+
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li class="dropdown">
+                            <a href="vision.html">Vision <i class="fas fa-chevron-down fs-08"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="vision.html">Vision & Mission</a></li>
+                                <li><a href="leader.html">Leadership</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="index.html#services">Services <i class="fas fa-chevron-down fs-08"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="service-clinical.html">Clinical Care</a></li>
+                                <li><a href="service-surgical.html">Surgical Clinic</a></li>
+                                <li><a href="service-emergency.html">Emergency 24x7</a></li>
+                                <li><a href="service-diagnostic.html">Diagnostic Lab</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Patient Portal <i class="fas fa-chevron-down fs-08"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="find-doctor.html">Find a Doctor</a></li>
+                                <li><a href="book-appointment.html">Book Appointment</a></li>
+                                <li><a href="view-reports.html">View Reports</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-contact"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="book-appointment.html" class="btn btn-primary"><i class="fas fa-calendar-check mr-5"></i> Book Appointment</a>
                 </div>
-            </a>
-
-            <div class="mobile-menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="vision.html">Vision</a></li>
-                    <li class="dropdown">
-                        <a href="index.html#services">Services <i class="fas fa-chevron-down fs-08"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="service-clinical.html">Clinical Care</a></li>
-                            <li><a href="service-surgical.html">Surgical Infrastructure</a></li>
-                            <li><a href="service-emergency.html">Emergency Services</a></li>
-                            <li><a href="service-diagnostic.html">Diagnostic Facilities</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="service-diagnostic.html">Diagnostics</a></li>
-                    <li class="nav-contact"><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-actions">
-                <a href="book-appointment.html" class="btn btn-primary"><i class="fas fa-calendar-check mr-5"></i> Book Appointment</a>
             </div>
         </div>
     </div>

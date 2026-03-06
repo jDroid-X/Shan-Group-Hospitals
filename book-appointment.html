@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | Shan Group Hospital</title>
+    <meta name="description"
+        content="Schedule your medical consultation online with Shan Group Hospital's expert doctors.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* All styles moved to style.css for professional enterprise structure */
+    </style>
+</head>
+
+<body>
+    <!-- Main Navigation Header -->
+    <div id="header-placeholder"></div>
+
+    <section class="page-header header-portal">
+        <div class="container">
+            <h1>Book an Appointment</h1>
+            <p class="fs-12">Consult with our expert doctors today.</p>
+        </div>
+    </section>
+
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-form">
+                <h3 class="text-primary text-center mb-25 fs-18">
+                    Patient Information</h3>
+                <form
+                    onsubmit="event.preventDefault(); alert('Demo: Appointment request submitted. We will contact you shortly.');">
+                    <div class="form-row">
+                        <div class="form-group mb-0">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" class="form-control" required>
+                        </div>
+                        <div class="form-group mb-0">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group mb-0">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group mb-0">
+                            <label for="email">Email (Optional)</label>
+                            <input type="email" id="email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="department">Select Department</label>
+                        <select id="department" class="form-control" required>
+                            <option value="">-- Choose Speciality --</option>
+                            <option value="Cardiology">Cardiology</option>
+                            <option value="Orthopedics">Orthopedics</option>
+                            <option value="Gynecology">Gynecology & Obstetrics</option>
+                            <option value="General">General OPD</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 fs-11 p-15 mt-10"><i
+                            class="fas fa-calendar-check mr-5"></i> Confirm Appointment
+                        Booking</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

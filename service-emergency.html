@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Services | Shan Group Hospital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header {
+            background-image: url('assets/images/image2.jpeg');
+        }
+
+        .service-details {
+            padding: 80px 0;
+        }
+
+        .service-block {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 60px;
+            align-items: flex-start;
+        }
+
+        .service-block.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .service-block img {
+            width: 50%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-text {
+            flex: 1;
+        }
+
+        .service-text h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .service-text p {
+            color: var(--text-dark);
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .service-text ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .service-text ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .service-text ul li i {
+            color: var(--secondary-color);
+        }
+
+        @media (max-width: 768px) {
+
+            .service-block,
+            .service-block.reverse {
+                flex-direction: column;
+            }
+
+            .service-block img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main Navigation Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Emergency Services</h1>
+            <p class="fs-12 mw-600">Immediate medical intervention for trauma, critical illness,
+                and life-threatening conditions. Our dedicated ER team is available 24/7 for urgent care.</p>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="service-details">
+        <div class="container">
+            <!-- 24-Hour Ambulance -->
+            <div class="service-block">
+                <div class="service-text">
+                    <h2>24-Hour Ambulance and Emergency Response Service</h2>
+                    <p>Emergency teams respond promptly to trauma, cardiac events, and urgent medical conditions.
+                        Ambulances are equipped with life-support systems and trained paramedics. Quick coordination
+                        between ambulance services and hospital emergency units minimizes critical response time.</p>
+                    <ul>
+                        <li><i class="fas fa-ambulance"></i> Rapid Emergency Response</li>
+                        <li><i class="fas fa-heartbeat"></i> Paramedic &amp; Life-Support equipped</li>
+                        <li><i class="fas fa-phone-alt"></i> Dedicated 24x7 Hotline</li>
+                    </ul>
+                </div>
+                <!-- image9 could be random or placeholder, assuming image2 was used on home for emergency, lets use image2 again -->
+                <img src="assets/images/image2.jpeg" alt="Emergency Services">
+            </div>
+        </div>
+    </section>
+
+    <!-- Action Bar -->
+    <section class="action-bar bg-accent">
+        <div class="container">
+            <h3 class="action-bar-title text-white">Emergency Hotline</h3>
+            <p class="mb-30 opacity-09">If you are facing a medical emergency, call us immediately at our 24/7 helpline.
+            </p>
+            <a href="tel:+91-123-456-7890" class="btn btn-primary bg-white text-accent p-15-30 fs-11"><i
+                    class="fas fa-phone-alt mr-5"></i> Call +91-123-456-7890
+                Now</a>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

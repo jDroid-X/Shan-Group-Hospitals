@@ -4,93 +4,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shan Group Hospitals - Portfolio</title>
-    <style>
-        body {
-            background: #0f172a;
-            color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 600px;
-            padding: 2rem;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-        }
-
-        h1 {
-            color: #d4af37;
-            /* Gold */
-            margin-bottom: 1rem;
-        }
-
-        p {
-            color: #94a3b8;
-            margin-bottom: 2rem;
-        }
-
-        .links {
-            display: grid;
-            gap: 1rem;
-        }
-
-        .btn {
-            padding: 1rem 2rem;
-            background: #d4af37;
-            color: #0f172a;
-            text-decoration: none;
-            border-radius: 10px;
-            font-weight: bold;
-            transition: transform 0.2s, background 0.2s;
-        }
-
-        .btn:hover {
-            background: #b8962e;
-            transform: translateY(-2px);
-        }
-
-        .secondary-links {
-            margin-top: 2rem;
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-        }
-
-        .secondary-links a {
-            color: #94a3b8;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-
-        .secondary-links a:hover {
-            color: #d4af37;
-        }
-    </style>
+    <title>Shan Group Hospital | World-Class Medical Care, Rooted in Compassion</title>
+    <meta name="description"
+        content="Shan Group Hospital offers advanced diagnostic laboratories, modern operation theatres, 24x7 emergency and OPD services in India.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <div class="container">
-        <h1>Shan Group Hospitals</h1>
-        <p>Welcome to the digital presence of Shan Group Hospitals. Select a version to view:</p>
-        <div class="links">
-            <a href="ShanGroupWeb3/index.html" class="btn">View Latest Website (v3)</a>
+
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero bg-hero hero-main">
+        <div class="container">
+            <div class="hero-content">
+                <h1>World-Class Medical Care, Rooted in Compassion.</h1>
+                <p>Equipped with advanced diagnostic laboratories, modern operation theatres, and 24x7 emergency
+                    response to serve you better.</p>
+                <div class="hero-btns">
+                    <a href="#services" class="btn btn-primary"><i class="fas fa-th-list mr-5"></i> Explore Services</a>
+                    <a href="service-emergency.html" class="btn btn-secondary"><i class="fas fa-ambulance mr-5"></i>
+                        Emergency Response 24x7</a>
+                </div>
+            </div>
         </div>
-        <div class="secondary-links">
-            <a href="ShanGroupWeb2/index.html">Version 2</a>
-            <a href="ShanGroupWeb/index.html">Version 1</a>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="quick-actions">
+        <div class="container">
+            <a href="find-doctor.html" class="action-card action-card-link">
+                <i class="fas fa-stethoscope"></i>
+                <h3>Find a Doctor</h3>
+                <p class="text-light fs-09">Search leading specialists</p>
+            </a>
+            <a href="service-emergency.html" class="action-card action-card-link action-card-accent">
+                <i class="fas fa-ambulance text-accent"></i>
+                <h3 class="text-accent">Emergency Care</h3>
+                <p class="text-light fs-09">24/7 Trauma &amp; Ambulance</p>
+            </a>
+            <a href="view-reports.html" class="action-card action-card-link">
+                <i class="fas fa-vials"></i>
+                <h3>View Reports</h3>
+                <p class="text-light fs-09">Access lab results online</p>
+            </a>
+            <a href="book-appointment.html" class="action-card action-card-link">
+                <i class="fas fa-calendar-check"></i>
+                <h3>Book Appointment</h3>
+                <p class="text-light fs-09">Schedule easily online</p>
+            </a>
         </div>
-    </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Comprehensive Healthcare Services</h2>
+                <p class="section-subtitle">Delivering safe, modern, and advanced medical care structured around patient
+                    comfort and safety.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Clinical Care -->
+                <div class="service-card">
+                    <img src="assets/images/image1.jpeg" alt="OPD Services" class="service-img">
+                    <div class="service-content">
+                        <h3>Core Clinical Care</h3>
+                        <p>24-hour patient admission, daily doctor consultations, specialized cardiology, and orthopedic
+                            treatments.</p>
+                        <a href="service-clinical.html" class="read-more">View Details <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Surgical Infrastructure -->
+                <div class="service-card">
+                    <img src="assets/images/image6.jpeg" alt="Operation Theatre" class="service-img">
+                    <div class="service-content">
+                        <h3>Surgical Infrastructure</h3>
+                        <p>Comprehensive operation theatres for minimally invasive (laparoscopic) and open surgical
+                            procedures.</p>
+                        <a href="service-surgical.html" class="read-more">View Details <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Emergency Services -->
+                <div class="service-card">
+                    <img src="assets/images/image2.jpeg" alt="Emergency Services" class="service-img">
+                    <div class="service-content">
+                        <h3>Emergency Services</h3>
+                        <p>Immediate response and life-saving intervention. 24-hour ambulance equipped with life-support
+                            systems.</p>
+                        <a href="service-emergency.html" class="read-more"><i class="fas fa-ambulance mr-5"></i> View
+                            Details <i class="fas fa-arrow-right ml-5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Maternity & Gynecological -->
+                <div class="service-card">
+                    <img src="assets/images/image3.jpeg" alt="Maternity Services" class="service-img">
+                    <div class="service-content">
+                        <h3>Women's Healthcare</h3>
+                        <p>24-hour normal &amp; C-section delivery facilities with specialized treatment for obstetric
+                            conditions.</p>
+                        <a href="service-clinical.html" class="read-more"><i class="fas fa-file-medical mr-5"></i> View
+                            Details <i class="fas fa-arrow-right ml-5"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Consultation Highlight -->
+    <section class="section doctor-highlight">
+        <div class="container">
+            <div class="diagnostics-flex">
+                <div class="diag-img">
+                    <img src="assets/images/image4.jpeg" alt="Doctor Consultation" class="img-styled">
+                </div>
+                <div class="diag-content">
+                    <h2 class="section-title">Expert Consultations Daily</h2>
+                    <p class="section-subtitle text-left mb-20">Experienced
+                        physicians conduct daily consultations across multiple specialties ensuring accurate diagnosis,
+                        personalized treatment planning, and patient education.</p>
+
+                    <div class="doctor-features">
+                        <div class="doc-feature">
+                            <i class="fas fa-heartbeat"></i> Cardiology
+                        </div>
+                        <div class="doc-feature">
+                            <i class="fas fa-bone"></i> Orthopedics
+                        </div>
+                        <div class="doc-feature">
+                            <i class="fas fa-baby"></i> Gynecology &amp; Obstetrics
+                        </div>
+                        <div class="doc-feature">
+                            <i class="fas fa-user-md"></i> Internal Medicine
+                        </div>
+                    </div>
+
+                    <a href="book-appointment.html" class="btn btn-primary mt-30"><i
+                            class="fas fa-calendar-check mr-5"></i>
+                        Schedule
+                        Your Consultation <i class="fas fa-chevron-right ml-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diagnostics Section -->
+    <section class="diagnostics-section">
+        <div class="container">
+            <div class="diagnostics-flex">
+                <div class="diag-content">
+                    <h2 class="section-title">Advanced Diagnostic &amp; Lab Services</h2>
+                    <p class="section-subtitle text-left">Supporting precise clinical
+                        decisions through modern imagining and automated laboratory evaluation.</p>
+
+                    <ul class="diag-list">
+                        <li>
+                            <i class="fas fa-x-ray"></i>
+                            <div>
+                                <h4>MRI &amp; CT Scan</h4>
+                                <p class="text-light fs-095">High-resolution imaging for
+                                    neurological, cardiac, and structural diagnostics.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-microscope"></i>
+                            <div>
+                                <h4>Pathology Lab</h4>
+                                <p class="text-light fs-095">Automated analyzers for blood
+                                    tests, biochemistry, and microbiology.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-desktop"></i>
+                            <div>
+                                <h4>Digital Ultrasound &amp; X-ray</h4>
+                                <p class="text-light fs-095">Fast, non-invasive imaging
+                                    ensuring precise and early detection.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="service-diagnostic.html" class="btn btn-outline mt-20"><i class="fas fa-flask mr-5"></i>
+                        View Diagnostic
+                        Packages</a>
+                </div>
+                <div class="diag-img">
+                    <!-- Assuming image5 or image8 is a diagnostic machine/room -->
+                    <img src="assets/images/image5.jpeg" alt="Diagnostic Laboratory at Shan Group Hospital">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="vision-section">
+        <div class="container">
+            <div class="vision-box">
+                <i class="fas fa-quote-left fs-20 text-secondary mb-20"></i>
+                <h2>A Vision for a Healthier Future</h2>
+                <p>"The Shan Group Hospital stands as a symbol of hope, innovation, and social responsibility. As we
+                    expand our healthcare footprint, we remain steadfast in our mission to build healthier communities
+                    and a stronger, more equitable India."</p>
+                <div class="author">- Dr. Shan Chaudhary</div>
+                <a href="vision.html" class="read-more mt-20 d-inline-block">Read Full Message & Vision <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -14,10 +14,10 @@ const SHARED_COMPONENTS = {
         <div class="container">
             <div class="branding-flex-v1">
                 <a href="index.html" class="branding-logo">
-                    <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital Logo">
+                    <img src="assets/images/Shan_Logo.png" alt="SHAN Multi Speciality Hospital Logo">
                     <div class="hospital-branding-text">
-                        <span class="hospital-name-main">Shan Group Hospital</span>
-                        <span class="hospital-tagline">Multi Speciality Hospital & Research Centre</span>
+                        <span class="hospital-name-main">SHAN Multi Speciality Hospital</span>
+                        <span class="hospital-tagline">& Research Centre</span>
                     </div>
                 </a>
 
@@ -113,7 +113,7 @@ const SHARED_COMPONENTS = {
                     <li><a href="service-surgical.html">Surgical Center</a></li>
                     <li><a href="service-emergency.html">Emergency 24x7</a></li>
                     <li><a href="service-diagnostic.html">Diagnostics &amp; Lab</a></li>
-                    <li><a href="service-diagnostic.html">Pharmacy</a></li>
+                    <li><a href="service-diagnostic.html#pharmacy">Pharmacy</a></li>
                 </ul>
             </div>
 
@@ -150,6 +150,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const yearSpan = document.getElementById('current-year');
     if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
+    // 4. Header Scroll Effect
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
     console.log("Shan Group Hospital Website Initialized (Local File Support Active).");
 });
 
@@ -178,11 +188,19 @@ function initializeAppInteractivity() {
     document.querySelectorAll('.dropdown > a').forEach(dropdownLink => {
         dropdownLink.addEventListener('click', function (e) {
             if (window.innerWidth <= 768) {
-                const href = this.getAttribute('href');
-                if (href === "#" || href.includes("#")) {
+                const parent = this.parentElement;
+                const wasActive = parent.classList.contains('active');
+                
+                // Close all other dropdowns
+                document.querySelectorAll('.dropdown').forEach(d => {
+                    if (d !== parent) d.classList.remove('active');
+                });
+
+                if (!wasActive) {
                     e.preventDefault();
-                    this.parentElement.classList.toggle('active');
+                    parent.classList.add('active');
                 }
+                // If it was already active, allow the link to navigate or sub-links to work
             }
         });
     });

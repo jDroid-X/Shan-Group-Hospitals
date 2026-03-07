@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Reports | Shan Group Hospital</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="particleCanvas"></canvas>
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital"
+                    onerror="this.src=''; this.alt='SHAN HOSPITAL'; this.className='text-logo'">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#diagnostics">Diagnostics</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-action">
+                <a href="book-appointment.html" class="btn-gold-outline"><i class="fas fa-calendar-check"></i> Book
+                    Now</a>
+            </div>
+            <div class="mobile-menu-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#diagnostics">Diagnostics</a>
+            <a href="contact.html">Contact</a>
+            <a href="book-appointment.html" class="btn-gold-solid">Book Appointment</a>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container fade-in-up visible">
+            <div class="section-title-wrapper">
+                <div class="gold-line"></div>
+                <h2>Datalink: Lab Results</h2>
+                <p>Access your medical scrolls securely from anywhere.</p>
+                <div class="gold-line reverse"></div>
+            </div>
+
+            <div class="rpg-form-compact">
+                <i class="fas fa-shield-alt icon-large"></i>
+                <h3 class="text-gold">Secure Identification</h3>
+                <br>
+                <form class="feature-list">
+                    <div class="rpg-input-group">
+                        <label class="text-gold">Patient ID</label>
+                        <input type="text" placeholder="Patient ID / Quest Ref" class="rpg-input">
+                    </div>
+                    <div class="rpg-input-group mt-20">
+                        <label class="text-gold">Passcode</label>
+                        <input type="password" placeholder="Passcode" class="rpg-input">
+                    </div>
+                    <button type="button" class="btn-gold-solid w-100 mt-20">Establish Link</button>
+                    <p class="encryption-text">Encryption Protocol: ARC-SHAN-X9</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital" class="footer-logo"
+                onerror="this.src=''; this.alt='SHAN HOSPITAL'">
+            <p>&copy; 2024 Shan Group Hospitals. Constructed by Antigravity in the Genesis Engine.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

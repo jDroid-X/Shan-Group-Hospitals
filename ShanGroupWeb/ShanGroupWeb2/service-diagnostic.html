@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnostic Services | Shan Group Hospital</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="particleCanvas"></canvas>
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital"
+                    onerror="this.src=''; this.alt='SHAN HOSPITAL'; this.className='text-logo'">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#diagnostics">Diagnostics</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-action">
+                <a href="book-appointment.html" class="btn-gold-outline"><i class="fas fa-calendar-check"></i> Book
+                    Now</a>
+            </div>
+            <div class="mobile-menu-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#diagnostics">Diagnostics</a>
+            <a href="contact.html">Contact</a>
+            <a href="book-appointment.html" class="btn-gold-solid">Book Appointment</a>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container fade-in-up visible">
+            <div class="section-title-wrapper">
+                <div class="gold-line"></div>
+                <h2>Diagnostic Packages</h2>
+                <p>Supporting precise clinical decisions with advanced imagery.</p>
+                <div class="gold-line reverse"></div>
+            </div>
+
+            <div class="services-grid">
+                <div class="rpg-card">
+                    <div class="card-content">
+                        <i class="fas fa-heartbeat icon-large"></i>
+                        <h3>Cardiac Quest</h3>
+                        <p class="text-light-muted">ECG, Lipid Profile, and Expert Consultation.</p>
+                        <p class="tier-text">Elite Tier</p>
+                        <a href="book-appointment.html" class="btn-gold-solid w-100 mt-20">Purchase Session</a>
+                    </div>
+                </div>
+                <div class="rpg-card">
+                    <div class="card-content">
+                        <i class="fas fa-microscope icon-large"></i>
+                        <h3>Blood Origin</h3>
+                        <p class="text-light-muted">Full blood count and metabolic screening.</p>
+                        <p class="tier-text">Core Tier</p>
+                        <a href="book-appointment.html" class="btn-gold-solid w-100 mt-20">Purchase Session</a>
+                    </div>
+                </div>
+                <div class="rpg-card">
+                    <div class="card-content">
+                        <i class="fas fa-brain icon-large"></i>
+                        <h3>Neural Scan</h3>
+                        <p class="text-light-muted">Advanced MRI and neurological evaluation.</p>
+                        <p class="tier-text">Legendary Tier</p>
+                        <a href="book-appointment.html" class="btn-gold-solid w-100 mt-20">Purchase Session</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital" class="footer-logo"
+                onerror="this.src=''; this.alt='SHAN HOSPITAL'">
+            <p>&copy; 2024 Shan Group Hospitals. Constructed by Antigravity in the Genesis Engine.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

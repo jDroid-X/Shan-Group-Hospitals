@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Reports | Shan Group Hospital</title>
+    <meta name="description"
+        content="Securely access your patient diagnostic reports from Shan Group Hospital using your Patient ID and registered mobile number.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="page-header">
+        <div class="container text-center">
+            <span class="hero-subtitle text-secondary">Secure Portal</span>
+            <h1 class="text-white">Patient Diagnostics</h1>
+        </div>
+    </section>
+
+    <section class="section bg-soft">
+        <div class="container df-jc">
+            <div class="login-box max-width-800">
+                <div class="form-title">
+                    <i class="fas fa-file-medical-alt fs-40 text-secondary mb-20"></i>
+                    <h2 class="text-primary">Access Your Reports</h2>
+                    <p class="text-medium">Enter your credentials to securely view your results.</p>
+                </div>
+                <form
+                    onsubmit="event.preventDefault(); alert('Demo: Online Portal Login functionality would execute here.');">
+                    <div class="form-group">
+                        <label for="pid" class="font-bold">Patient ID</label>
+                        <input type="text" id="pid" class="form-control" placeholder="E.g. SGH-10293" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile" class="font-bold">Registered Mobile</label>
+                        <input type="tel" id="mobile" class="form-control" placeholder="Enter mobile number" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 py-20 mt-20">Login &amp; View Reports</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <div class="floating-chat"><i class="fas fa-comment"></i></div>
+    <div class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

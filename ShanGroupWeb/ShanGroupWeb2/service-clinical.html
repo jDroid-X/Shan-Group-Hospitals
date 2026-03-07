@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical Care | Shan Group Hospital</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="particleCanvas"></canvas>
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital"
+                    onerror="this.src=''; this.alt='SHAN HOSPITAL'; this.className='text-logo'">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#diagnostics">Diagnostics</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-action">
+                <a href="book-appointment.html" class="btn-gold-outline"><i class="fas fa-calendar-check"></i> Book
+                    Now</a>
+            </div>
+            <div class="mobile-menu-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#diagnostics">Diagnostics</a>
+            <a href="contact.html">Contact</a>
+            <a href="book-appointment.html" class="btn-gold-solid">Book Appointment</a>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container fade-in-up visible">
+            <div class="section-title-wrapper">
+                <div class="gold-line"></div>
+                <h2>Core Clinical Care</h2>
+                <p>Advanced healing protocols for long-term health.</p>
+                <div class="gold-line reverse"></div>
+            </div>
+
+            <div class="split-layout">
+                <div class="split-image">
+                    <div class="image-frame">
+                        <img src="assets/images/image1.jpeg" alt="Clinical">
+                        <div class="frame-corner top-left"></div>
+                        <div class="frame-corner top-right"></div>
+                        <div class="frame-corner bottom-left"></div>
+                        <div class="frame-corner bottom-right"></div>
+                    </div>
+                </div>
+                <div class="split-content">
+                    <h3 class="text-gold">Expert Consultations</h3>
+                    <p class="text-light-muted">Our clinicians across multiple specialties—including Cardiology,
+                        Orthopedics, and Internal Medicine—provide meticulous care and precise diagnostics to every
+                        visitor in our realm.</p>
+                    <br>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check text-gold"></i> 24-hour patient admission</li>
+                        <li><i class="fas fa-check text-gold"></i> Daily doctor consultations</li>
+                        <li><i class="fas fa-check text-gold"></i> Specialized cardiology treatments</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital" class="footer-logo"
+                onerror="this.src=''; this.alt='SHAN HOSPITAL'">
+            <p>&copy; 2024 Shan Group Hospitals. Constructed by Antigravity in the Genesis Engine.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

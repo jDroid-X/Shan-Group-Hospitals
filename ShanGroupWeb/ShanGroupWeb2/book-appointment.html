@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | Shan Group Hospital</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="particleCanvas"></canvas>
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital"
+                    onerror="this.src=''; this.alt='SHAN HOSPITAL'; this.className='text-logo'">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#diagnostics">Diagnostics</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-action">
+                <a href="book-appointment.html" class="btn-gold-outline active"><i class="fas fa-calendar-check"></i>
+                    Book Now</a>
+            </div>
+            <div class="mobile-menu-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#diagnostics">Diagnostics</a>
+            <a href="contact.html">Contact</a>
+            <a href="book-appointment.html" class="btn-gold-solid">Book Appointment</a>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container fade-in-up visible">
+            <div class="section-title-wrapper">
+                <div class="gold-line"></div>
+                <h2>Secure Your Consultation</h2>
+                <p>Select your realm of healing and physician.</p>
+                <div class="gold-line reverse"></div>
+            </div>
+
+            <div class="rpg-form-container">
+                <form id="appointmentForm" class="feature-list">
+                    <div class="rpg-input-group">
+                        <label for="fullName" class="text-gold">Full Name</label>
+                        <input type="text" id="fullName" placeholder="Enter your name" class="rpg-input"
+                            title="Full Name">
+                    </div>
+                    <div class="rpg-input-group">
+                        <label for="specialty" class="text-gold">Specialty</label>
+                        <select id="specialty" class="rpg-select" title="Specialty">
+                            <option>Cardiology</option>
+                            <option>Orthopedics</option>
+                            <option>Gynecology</option>
+                            <option>General Medicine</option>
+                        </select>
+                    </div>
+                    <div class="rpg-input-group">
+                        <label for="appointmentDate" class="text-gold">Preferred Date</label>
+                        <input type="date" id="appointmentDate" class="rpg-input" title="Appointment Date">
+                    </div>
+                    <button type="button" class="btn-gold-solid w-100 mt-20">Confirm Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/images/Shan_Logo.png" alt="Shan Group Hospital" class="footer-logo-img"
+                        onerror="this.src=''; this.alt='SHAN HOSPITAL'">
+                    <p>World-class medical care through a blend of modern infrastructure, cutting-edge technology, and
+                        compassionate service.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="find-doctor.html">Our Doctors</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="service-clinical.html">Clinical Care</a></li>
+                        <li><a href="service-surgical.html">Surgical Center</a></li>
+                        <li><a href="service-emergency.html">Emergency 24x7</a></li>
+                        <li><a href="service-diagnostic.html">Diagnostics</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt text-gold mr-10"></i> Shan Group Hospital, India</p>
+                    <p><i class="fas fa-phone-alt text-gold mr-10"></i> +91-XXXX-XXXXXX</p>
+                    <p><i class="fas fa-envelope text-gold mr-10"></i> info@shangroup.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shan Group Hospitals. Constructed by Antigravity in the Genesis Engine.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

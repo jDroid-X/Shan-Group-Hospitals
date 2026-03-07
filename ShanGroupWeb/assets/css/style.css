@@ -214,6 +214,8 @@ header.scrolled .nav-menu a:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.mobile-only-btn { display: none; }
+
 /* Dropdowns */
 .dropdown { position: relative; }
 .dropdown-menu {
@@ -548,6 +550,11 @@ footer {
   .nav-menu.active { right: 0; }
   .nav-menu li { width: 100%; }
   .nav-menu a { border: none; background: none; width: 100%; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  
+  .nav-main-row { padding: 0; }
+  .header-actions { display: none; }
+  .mobile-only-btn { display: block; margin-top: 15px; }
+  .mobile-only-btn a { background: var(--secondary-color) !important; color: white !important; border: none !important; text-align: center; }
   
   .hero { min-height: 480px; padding-top: 150px; }
   .hero h1 { font-size: 2rem; }

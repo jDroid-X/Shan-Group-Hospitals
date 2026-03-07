@@ -69,6 +69,7 @@ const SHARED_COMPONENTS = {
                             </ul>
                         </li>
                         <li class="nav-contact"><a href="contact.html">Contact Us</a></li>
+                        <li class="mobile-only-btn"><a href="book-appointment.html" class="btn btn-primary">Book Appointment</a></li>
                     </ul>
                 </nav>
 
